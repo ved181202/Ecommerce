@@ -113,10 +113,18 @@
     <Content Include="UserTemplate\mail\contact.js" />
     <Content Include="UserTemplate\mail\contact.php" />
     <Content Include="UserTemplate\mail\jqBootstrapValidation.min.js" />
+    <Content Include="User\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
     </Compile>
